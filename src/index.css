@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  font-family: "Poppins", sans-serif ;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: #222629;
+  background-color: #f6faff;
+  
+  font-synthesis:none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --sidebar-active:#4492f4;
+  --main-bg-color: #f7fbff;
+  --card-design-border: 0px !important;
+  --card-design-background: #f6faff !important;
+  --btn-backgroundcolor: #71c979;
+}
+
+.body{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    height: 100vh;
+    font-family:  "Poppins", sans-serif !important;
+}
+
+.sidebar{ 
+  width: 200px;
+  height: 100vh;
+  margin: 0px 10px;
+}
+
+.sidebar-links ul{
+  list-style: none;
+  text-align: center;
+  padding: 12px 0px;
+}
+
+.sidebar-links ul li{
+  margin: 15px 0px;
+  padding: 8px 0px;
+}
+
+.sidebar-links ul li.active{
+   background-color:var(--sidebar-active);
+  /* background-color: rgb(77, 41, 240); */
+  border-radius: 10px;
+  /* padding: 6px 0px; */
+  color: #f6faff;
+
+}
+
+.sidebar-links ul li.active a{
+  color: white;
+}
+
+.sidebar-links ul li a{
+  color: black;
+  text-decoration: none;
+}
+
+.sidebar-settings-link li a{
+  /* position: static;
+  flex-direction: row; */
+  line-height: 46;
+  /* display: inline-block; */
+  vertical-align: baseline;
+} 
+
+.main-container{
+  width: 100%;
+  padding: 15px;
+  background-color: var(--main-bg-color);
+}
+
+.card-design{
+  border: var(--card-design-border) !important;
+  background-color: var(--card-design-background) !important;
+  margin: 10px;
+}
+
+.fs-7{
+  font-size: 12px !important;
+}
+
+.flight-image{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.btn-color{
+  background-color: var(--btn-backgroundcolor) !important;
+  color: #fff;
+  border-color: var(--btn-bordercolor) !important;
+}
+
+.form-label{
+  font-size: 12px !important;
+  font-weight: 500 !important;
+}
+
+.Form.Control{
+  border: 1px solid #f7f7f7 !important;
+}
+
+.Form.Control:focus{
+  box-shadow: none !important;
+}
+
+.slider-contains{
+  background-color: #71c979;
+}
+
+.row {
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin: 2px !important;
+  padding: 8px !important;
+  gap:0px !important;
+}
+
+.grid-container > div {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+/* .dslider {
+  grid-area: 1 / 2 / span 1/ span 2;
+} */
